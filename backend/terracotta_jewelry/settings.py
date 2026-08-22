@@ -85,8 +85,16 @@ STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STORAGES = {
     "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
-    "staticfiles": {"BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"},
+    "staticfiles": {"BACKEND": "terracotta_jewelry.storage.LenientManifestStorage"},
 }
+
+# Serves the built React app (frontend/dist) directly from this same Django
+# service, so the whole site lives behind one URL. No-op locally, where the
+# frontend runs on its own dev server and this folder won't exist.
+_FRONTEND_DIST = BASE_DIR.parent / "frontend" / "dist"
+if _FRONTEND_DIST.exists():
+    WHITENOISE_ROOT = _FRONTEND_DIST
+    WHITENOISE_INDEX_FILE = True
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
