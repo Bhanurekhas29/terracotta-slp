@@ -5,7 +5,8 @@ set -o errexit
 # serves directly (see WHITENOISE_ROOT in settings.py) so both live behind
 # one URL.
 cd frontend
-npm install
+rm -rf node_modules
+npm ci
 npm run build
 cd ..
 
