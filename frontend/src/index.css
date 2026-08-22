@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- Mannvasam brand tokens --- */
+  --color-kiln: #7A2E1F;        /* dark oxide red — hero, primary dark bg */
+  --color-kiln-deep: #5C2116;   /* deeper shade for gradients/borders */
+  --color-clay: #B8542C;        /* mid terracotta — CTAs, accents */
+  --color-turmeric: #D9A441;    /* festive gold accent */
+  --color-ivory: #F3E9D8;       /* warm off-white — light sections */
+  --color-indigo: #211F3D;      /* contrast section bg */
+  --color-charcoal: #241A15;    /* near-black brown — body text on light */
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Kolam-inspired dot grid — the site's recurring textile motif */
+.kolam-dots {
+  background-image: radial-gradient(currentColor 1.4px, transparent 1.4px);
+  background-size: 22px 22px;
+}
+
+/* Endlessly scrolling kolam dot strip — used along the hero's bottom edge */
+@keyframes kolam-scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -44px 0;
+  }
+}
+
+.kolam-scroll {
+  animation: kolam-scroll 5s linear infinite;
+}
+
+/* Scroll-reveal — fade + rise into place the first time an element enters view */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.reveal-in {
+  animation: reveal-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Focus visibility for keyboard users */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-turmeric);
+  outline-offset: 3px;
+}
+
+::selection {
+  background-color: var(--color-turmeric);
+  color: var(--color-charcoal);
+}
