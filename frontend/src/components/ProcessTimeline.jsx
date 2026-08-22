@@ -58,7 +58,7 @@ export default function ProcessTimeline() {
   }, []);
 
   return (
-    <section id="process" className="bg-ivory py-12 md:py-14">
+    <section id="process" className="bg-ivory pt-8 pb-12 md:pt-10 md:pb-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="max-w-xl">
           <p className="font-mono text-xs tracking-[0.25em] uppercase text-clay mb-4">

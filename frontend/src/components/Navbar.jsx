@@ -31,12 +31,12 @@ export default function Navbar() {
           <span className={scrolled ? "text-charcoal" : "text-ivory"}>Mannvasam</span>
         </a>
 
-        <div className="hidden md:flex items-center justify-center gap-8">
+        <div className="hidden md:flex items-center justify-center gap-6 lg:gap-8">
           {LINKS.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className={`font-body text-sm font-medium tracking-wide hover:opacity-70 transition-opacity ${
+              className={`shrink-0 whitespace-nowrap font-body text-sm font-medium tracking-wide hover:opacity-70 transition-opacity ${
                 scrolled ? "text-charcoal" : "text-ivory"
               }`}
             >

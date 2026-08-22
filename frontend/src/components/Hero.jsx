@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-kiln pt-24 pb-10 md:pt-28 md:pb-12"
+      className="relative overflow-hidden bg-kiln pt-28 pb-10 md:pt-32 md:pb-12"
     >
       <video
         key={videoSrc}
