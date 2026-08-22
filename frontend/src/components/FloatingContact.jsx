@@ -1,7 +1,7 @@
 import { PHONE_DIGITS, EMAIL } from "../contactInfo";
 
 const BUTTON_BASE =
-  "flex h-12 w-12 items-center justify-center rounded-full shadow-lg transition-transform duration-200 hover:scale-110 focus-visible:scale-110";
+  "flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-transform duration-200 hover:scale-110 focus-visible:scale-110";
 
 export default function FloatingContact() {
   return (
@@ -11,11 +11,11 @@ export default function FloatingContact() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with us on WhatsApp"
-        className={`${BUTTON_BASE} relative bg-[#25D366] text-white`}
+        className={`${BUTTON_BASE} relative overflow-visible bg-[#25D366] text-white`}
       >
-        <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-75" aria-hidden="true" />
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" className="relative" aria-hidden="true">
-          <path d="M17.6 6.32A8.86 8.86 0 0 0 11.94 4C7.13 4 3.2 7.93 3.2 12.74c0 1.55.4 3.03 1.18 4.35L3.13 21l4.02-1.23a9.55 9.55 0 0 0 4.79 1.29h.01c4.81 0 8.73-3.93 8.73-8.74a8.7 8.7 0 0 0-3.08-6zm-5.66 13.4h-.01a7.9 7.9 0 0 1-4.03-1.1l-.29-.17-3 .92.92-2.92-.19-.3a7.86 7.86 0 0 1-1.2-4.21c0-4.35 3.55-7.89 7.9-7.89 2.11 0 4.09.82 5.58 2.32a7.82 7.82 0 0 1 2.31 5.58c0 4.35-3.54 7.89-7.9 7.89zm4.33-5.91c-.24-.12-1.41-.7-1.63-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.18-1.4-1.31-1.64-.14-.24-.01-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.75-1.79-.2-.47-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z" />
+        <span className="absolute inset-0 -z-10 rounded-full bg-[#25D366] animate-ping opacity-60" aria-hidden="true" />
+        <svg width="30" height="30" viewBox="0 0 32 32" fill="white" className="relative drop-shadow-sm" aria-hidden="true">
+          <path d="M16.01 3C9.38 3 4 8.35 4 14.95c0 2.1.55 4.15 1.6 5.96L3.9 27.1c-.1.32.02.66.28.86.18.14.4.2.62.2.1 0 .2-.02.3-.05l6.4-1.68a13.1 13.1 0 0 0 4.51.8h.01c6.62 0 12-5.35 12-11.95C28.02 8.35 22.64 3 16.01 3zm0 21.87h-.01c-1.4 0-2.78-.37-4-1.07l-.29-.17-3.8 1 1.02-3.7-.19-.3a9.85 9.85 0 0 1-1.52-5.28c0-5.46 4.45-9.9 9.8-9.9 2.62 0 5.08 1.02 6.93 2.87a9.75 9.75 0 0 1 2.87 6.92c0 5.46-4.45 9.63-9.81 9.63zm5.4-7.36c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.36-1.45-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.63-.92-2.23-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.87 1.22 3.07c.15.2 2.1 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.75-.71 2-1.4.24-.68.24-1.27.17-1.4-.07-.12-.27-.19-.57-.34z" />
         </svg>
       </a>
       <a

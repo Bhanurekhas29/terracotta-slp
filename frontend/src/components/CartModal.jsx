@@ -32,7 +32,7 @@ export default function CartModal({ product, onClose }) {
               <button
                 onClick={onClose}
                 aria-label="Close"
-                className="text-charcoal/50 hover:text-charcoal transition-colors"
+                className="text-charcoal hover:text-clay transition-colors"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M6 6l12 12M6 18L18 6" />
@@ -44,7 +44,7 @@ export default function CartModal({ product, onClose }) {
               <div>
                 <p className="font-body font-semibold text-charcoal">{product.name}</p>
                 {product.artisan_village && (
-                  <p className="font-mono text-[11px] text-charcoal/50">{product.artisan_village}</p>
+                  <p className="font-mono text-[11px] text-charcoal">{product.artisan_village}</p>
                 )}
               </div>
               <p className="ml-auto font-body font-semibold text-clay shrink-0">
@@ -70,7 +70,7 @@ export default function CartModal({ product, onClose }) {
             <h3 className="mt-4 font-display text-xl font-semibold text-charcoal">
               Payment successful
             </h3>
-            <p className="mt-1 font-body text-sm text-charcoal/60">
+            <p className="mt-1 font-body text-sm text-charcoal">
               {product.name} is on its way from Panruti.
             </p>
             <button

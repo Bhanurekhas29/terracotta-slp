@@ -29,17 +29,17 @@ export function getTestimonials() {
   return request("/testimonials/");
 }
 
-export function subscribeToNewsletter(email) {
-  return request("/newsletter/", {
-    method: "POST",
-    body: JSON.stringify({ email }),
-  });
-}
-
 export function getSiteSettings() {
   return request("/site-settings/");
 }
 
 export function getProcessSteps() {
   return request("/process-steps/");
+}
+
+export function submitContactMessage({ name, email, message }) {
+  return request("/contact/", {
+    method: "POST",
+    body: JSON.stringify({ name, email, message }),
+  });
 }

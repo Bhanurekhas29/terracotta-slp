@@ -134,6 +134,7 @@ JAZZMIN_SETTINGS = {
         "shop.NewsletterSubscriber": "fas fa-envelope-open-text",
         "shop.SiteSettings": "fas fa-video",
         "shop.ProcessStep": "fas fa-fire",
+        "shop.ContactMessage": "fas fa-comment-dots",
     },
     "order_with_respect_to": ["shop", "shop.Category", "shop.Product", "shop.Testimonial"],
     "topmenu_links": [

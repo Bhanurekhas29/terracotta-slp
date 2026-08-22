@@ -3,9 +3,9 @@ import Hero from "./components/Hero";
 import ProcessTimeline from "./components/ProcessTimeline";
 import KolamDivider from "./components/KolamDivider";
 import FeaturedCollection from "./components/FeaturedCollection";
+import HowToOrder from "./components/HowToOrder";
 import Heritage from "./components/Heritage";
 import Testimonials from "./components/Testimonials";
-import Newsletter from "./components/Newsletter";
 import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
@@ -20,9 +20,9 @@ export default function App() {
         <KolamDivider tone="clay" />
         <ProcessTimeline />
         <FeaturedCollection />
+        <HowToOrder />
         <Heritage />
         <Testimonials />
-        <Newsletter />
         <Contact />
         <FAQ />
       </main>

@@ -46,7 +46,7 @@ export default function ProductCard({ product }) {
             {product.name}
           </h3>
           {product.artisan_village && (
-            <p className="mt-0.5 font-mono text-[11px] text-charcoal/50">
+            <p className="mt-0.5 font-mono text-[11px] text-charcoal">
               {product.artisan_village}
             </p>
           )}
@@ -54,7 +54,7 @@ export default function ProductCard({ product }) {
         <div className="text-right shrink-0">
           <div className="font-body font-semibold text-clay">{formatINR(product.price)}</div>
           {product.compare_at_price && (
-            <div className="font-mono text-xs text-charcoal/40 line-through">
+            <div className="font-mono text-xs text-charcoal line-through">
               {formatINR(product.compare_at_price)}
             </div>
           )}

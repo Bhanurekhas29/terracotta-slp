@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Category, Product, ProductImage, Testimonial, NewsletterSubscriber, SiteSettings, ProcessStep
+from .models import Category, Product, ProductImage, Testimonial, NewsletterSubscriber, SiteSettings, ProcessStep, ContactMessage
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -52,3 +52,10 @@ class ProcessStepSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProcessStep
         fields = ["id", "stage", "days", "description", "image", "order"]
+
+
+class ContactMessageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ContactMessage
+        fields = ["id", "name", "email", "message", "submitted_at"]
+        read_only_fields = ["id", "submitted_at"]

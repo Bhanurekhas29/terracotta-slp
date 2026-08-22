@@ -106,7 +106,7 @@ export default function ProcessTimeline() {
               <h3 className="mt-3 font-display text-xl font-semibold text-charcoal">
                 {s.stage}
               </h3>
-              <p className="mt-2 font-body text-sm leading-relaxed text-charcoal/70">
+              <p className="mt-2 font-body text-sm leading-relaxed text-charcoal">
                 {s.desc}
               </p>
             </Reveal>

@@ -52,12 +52,12 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="bg-ivory py-12 md:py-14">
-      <div className="mx-auto max-w-4xl px-6 lg:px-10">
+      <div className="mx-auto max-w-6xl px-4 lg:px-6">
         <Reveal className="max-w-xl">
           <p className="font-mono text-xs tracking-[0.25em] uppercase text-clay mb-4">
             Good to know
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-charcoal">
+          <h2 className="whitespace-nowrap font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-charcoal">
             Frequently asked questions
           </h2>
         </Reveal>
@@ -80,7 +80,7 @@ export default function FAQ() {
                   style={{ gridTemplateRows: open ? "1fr" : "0fr" }}
                 >
                   <div className="min-h-0 overflow-hidden">
-                    <p className="px-5 pb-4 font-body text-sm leading-relaxed text-charcoal/70">
+                    <p className="px-5 pb-4 font-body text-sm leading-relaxed text-charcoal">
                       {item.a}
                     </p>
                   </div>

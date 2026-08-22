@@ -125,7 +125,7 @@ export default function FeaturedCollection() {
         </Reveal>
 
         {usingFallback && (
-          <p className="mt-6 font-mono text-xs text-charcoal/40">
+          <p className="mt-6 font-mono text-xs text-charcoal">
             Showing sample pieces — start the Django API to load the live catalog.
           </p>
         )}

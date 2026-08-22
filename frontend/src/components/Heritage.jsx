@@ -72,7 +72,7 @@ export default function Heritage() {
           <div className="absolute -bottom-5 -left-5 rounded-2xl bg-ivory px-5 py-4 shadow-xl max-w-[200px]">
             <p className="font-mono text-[10px] uppercase tracking-wide text-clay">Village</p>
             <p className="font-display text-lg font-semibold text-charcoal mt-0.5">Panruti, TN</p>
-            <p className="font-body text-xs text-charcoal/60 mt-1">Cuddalore district, Tamil Nadu</p>
+            <p className="font-body text-xs text-charcoal mt-1">Cuddalore district, Tamil Nadu</p>
           </div>
         </Reveal>
       </div>

@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from .models import Category, Product, ProductImage, Testimonial, NewsletterSubscriber, SiteSettings, ProcessStep
+from .models import Category, Product, ProductImage, Testimonial, NewsletterSubscriber, SiteSettings, ProcessStep, ContactMessage
 
 
 @admin.register(Category)
@@ -83,6 +83,15 @@ class NewsletterSubscriberAdmin(admin.ModelAdmin):
     search_fields = ("email",)
     list_filter = ("is_active",)
     readonly_fields = ("subscribed_at",)
+
+
+@admin.register(ContactMessage)
+class ContactMessageAdmin(admin.ModelAdmin):
+    list_display = ("name", "email", "submitted_at", "is_read")
+    list_editable = ("is_read",)
+    search_fields = ("name", "email", "message")
+    list_filter = ("is_read",)
+    readonly_fields = ("name", "email", "message", "submitted_at")
 
 
 @admin.register(SiteSettings)
