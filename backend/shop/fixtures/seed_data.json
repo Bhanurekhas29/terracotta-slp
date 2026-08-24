@@ -1,0 +1,466 @@
+[
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Necklaces",
+    "slug": "necklaces",
+    "description": "Statement pieces, kiln-fired and hand-painted.",
+    "icon": "",
+    "order": 0,
+    "is_active": true,
+    "is_featured": true
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Earrings",
+    "slug": "earrings",
+    "description": "Jhumkas, studs and drops in matte clay.",
+    "icon": "",
+    "order": 1,
+    "is_active": true,
+    "is_featured": true
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {
+    "name": "Bangles & Cuffs",
+    "slug": "bangles-cuffs",
+    "description": "Wheel-thrown bangles finished in oxide glaze.",
+    "icon": "",
+    "order": 2,
+    "is_active": true,
+    "is_featured": true
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 4,
+  "fields": {
+    "name": "Bridal Sets",
+    "slug": "bridal-sets",
+    "description": "Full sets for weddings and festival wear.",
+    "icon": "",
+    "order": 3,
+    "is_active": true,
+    "is_featured": true
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 5,
+  "fields": {
+    "name": "Hair Accessories",
+    "slug": "hair-accessories",
+    "description": "Combs and pins in painted terracotta.",
+    "icon": "",
+    "order": 4,
+    "is_active": true,
+    "is_featured": false
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "name": "Panruti Sunburst Necklace",
+    "slug": "panruti-sunburst-necklace",
+    "category": 1,
+    "short_description": "Bold sunburst medallion, hand-painted in turmeric and oxide red.",
+    "description": "Bold sunburst medallion, hand-painted in turmeric and oxide red.",
+    "price": "2450.00",
+    "compare_at_price": null,
+    "image": "products/sunburst.jpg",
+    "finish": "matte",
+    "artisan_village": "Panruti, Tamil Nadu",
+    "stock": 12,
+    "order": 0,
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-08-20T02:05:32.591Z",
+    "updated_at": "2026-08-22T04:31:12.315Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "name": "Kolam Dot Jhumkas",
+    "slug": "kolam-dot-jhumkas",
+    "category": 2,
+    "short_description": "Jhumka drops etched with a kolam dot-grid, antique gold-dust finish.",
+    "description": "Jhumka drops etched with a kolam dot-grid, antique gold-dust finish.",
+    "price": "890.00",
+    "compare_at_price": null,
+    "image": "products/kolamjhumkas.jpg",
+    "finish": "antique",
+    "artisan_village": "Panruti, Tamil Nadu",
+    "stock": 12,
+    "order": 1,
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-08-20T02:05:32.593Z",
+    "updated_at": "2026-08-22T04:31:12.320Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "name": "Temple Arch Choker",
+    "slug": "temple-arch-choker",
+    "category": 1,
+    "short_description": "Layered choker inspired by gopuram arches.",
+    "description": "Layered choker inspired by gopuram arches.",
+    "price": "3200.00",
+    "compare_at_price": null,
+    "image": "products/templechoker.jpg",
+    "finish": "hand_painted",
+    "artisan_village": "Pondicherry",
+    "stock": 12,
+    "order": 2,
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-08-20T02:05:32.595Z",
+    "updated_at": "2026-08-22T04:31:12.326Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "name": "Oxide Wheel Bangle Set",
+    "slug": "oxide-wheel-bangle-set",
+    "category": 3,
+    "short_description": "Set of 3 wheel-thrown bangles in graduating oxide tones.",
+    "description": "Set of 3 wheel-thrown bangles in graduating oxide tones.",
+    "price": "1650.00",
+    "compare_at_price": null,
+    "image": "products/oxdbangles.jpg",
+    "finish": "glossy",
+    "artisan_village": "Panruti, Tamil Nadu",
+    "stock": 12,
+    "order": 3,
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-08-20T02:05:32.598Z",
+    "updated_at": "2026-08-22T04:31:12.333Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 5,
+  "fields": {
+    "name": "Marigold Stud Pair",
+    "slug": "marigold-stud-pair",
+    "category": 2,
+    "short_description": "Everyday studs shaped like marigold buds.",
+    "description": "Everyday studs shaped like marigold buds.",
+    "price": "450.00",
+    "compare_at_price": null,
+    "image": "products/studs.png",
+    "finish": "matte",
+    "artisan_village": "Athangudi, Tamil Nadu",
+    "stock": 12,
+    "order": 4,
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-08-20T02:05:32.600Z",
+    "updated_at": "2026-08-22T04:31:12.338Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 6,
+  "fields": {
+    "name": "Kaveri Bridal Set",
+    "slug": "kaveri-bridal-set",
+    "category": 4,
+    "short_description": "Necklace, earrings and maang-tikka, fired in a single batch for tonal match.",
+    "description": "Necklace, earrings and maang-tikka, fired in a single batch for tonal match.",
+    "price": "6800.00",
+    "compare_at_price": null,
+    "image": "products/kaveribridalset.png",
+    "finish": "hand_painted",
+    "artisan_village": "Panruti, Tamil Nadu",
+    "stock": 12,
+    "order": 5,
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-08-20T02:05:32.602Z",
+    "updated_at": "2026-08-22T04:31:12.350Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 7,
+  "fields": {
+    "name": "Terracotta Jhumka Cuff",
+    "slug": "terracotta-jhumka-cuff",
+    "category": 3,
+    "short_description": "Cuff bangle with jhumka-bell fringe.",
+    "description": "Cuff bangle with jhumka-bell fringe.",
+    "price": "1200.00",
+    "compare_at_price": null,
+    "image": "products/cuff.png",
+    "finish": "antique",
+    "artisan_village": "Pondicherry",
+    "stock": 12,
+    "order": 6,
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-08-20T02:05:32.604Z",
+    "updated_at": "2026-08-22T04:31:12.356Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 8,
+  "fields": {
+    "name": "Lotus Comb Pin",
+    "slug": "lotus-comb-pin",
+    "category": 5,
+    "short_description": "Hand-carved lotus motif hair pin.",
+    "description": "Hand-carved lotus motif hair pin.",
+    "price": "380.00",
+    "compare_at_price": null,
+    "image": "products/lotuscombpin.png",
+    "finish": "matte",
+    "artisan_village": "Athangudi, Tamil Nadu",
+    "stock": 12,
+    "order": 7,
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-08-20T02:05:32.606Z",
+    "updated_at": "2026-08-22T04:31:12.362Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 9,
+  "fields": {
+    "name": "Meenakshi Drop Earrings",
+    "slug": "meenakshi-drop-earrings",
+    "category": 2,
+    "short_description": "Long temple-style drop earrings, glossy oxide finish.",
+    "description": "Long temple-style drop earrings, glossy oxide finish.",
+    "price": "950.00",
+    "compare_at_price": null,
+    "image": "products/meenakshi.png",
+    "finish": "glossy",
+    "artisan_village": "Panruti, Tamil Nadu",
+    "stock": 12,
+    "order": 8,
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-08-20T02:05:32.608Z",
+    "updated_at": "2026-08-22T04:31:12.367Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 10,
+  "fields": {
+    "name": "Kumkum Red Layered Necklace",
+    "slug": "kumkum-red-layered-necklace",
+    "category": 1,
+    "short_description": "Three-layer necklace in signature kumkum red.",
+    "description": "Three-layer necklace in signature kumkum red.",
+    "price": "2100.00",
+    "compare_at_price": null,
+    "image": "products/kumkum.png",
+    "finish": "matte",
+    "artisan_village": "Panruti, Tamil Nadu",
+    "stock": 12,
+    "order": 9,
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-08-20T02:05:32.610Z",
+    "updated_at": "2026-08-22T04:31:12.371Z"
+  }
+},
+{
+  "model": "shop.productimage",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "image": "products/gallery/sunburst.jpg",
+    "alt_text": "sunburst necklace",
+    "order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "shop.testimonial",
+  "pk": 1,
+  "fields": {
+    "customer_name": "Divya R.",
+    "location": "Chennai",
+    "quote": "The Kaveri bridal set matched my saree perfectly — every piece looked like it was fired together.",
+    "rating": 5,
+    "photo": "",
+    "order": 0,
+    "is_active": true,
+    "is_featured": true
+  }
+},
+{
+  "model": "shop.testimonial",
+  "pk": 2,
+  "fields": {
+    "customer_name": "Meera K.",
+    "location": "Coimbatore",
+    "quote": "Lighter than I expected and the kolam etching is stunning up close.",
+    "rating": 5,
+    "photo": "",
+    "order": 1,
+    "is_active": true,
+    "is_featured": true
+  }
+},
+{
+  "model": "shop.testimonial",
+  "pk": 3,
+  "fields": {
+    "customer_name": "Anitha S.",
+    "location": "Pondicherry",
+    "quote": "I get asked about my jhumkas every single time I wear them.",
+    "rating": 4,
+    "photo": "",
+    "order": 2,
+    "is_active": true,
+    "is_featured": false
+  }
+},
+{
+  "model": "shop.testimonial",
+  "pk": 4,
+  "fields": {
+    "customer_name": "Priyanka M.",
+    "location": "Bengaluru",
+    "quote": "Beautiful matte finish, arrived carefully packed in cotton.",
+    "rating": 5,
+    "photo": "",
+    "order": 3,
+    "is_active": true,
+    "is_featured": true
+  }
+},
+{
+  "model": "shop.testimonial",
+  "pk": 5,
+  "fields": {
+    "customer_name": "Lakshmi N.",
+    "location": "Madurai",
+    "quote": "Wore the temple choker to my sister's wedding — got more compliments than the bride's jewels!",
+    "rating": 5,
+    "photo": "",
+    "order": 4,
+    "is_active": true,
+    "is_featured": true
+  }
+},
+{
+  "model": "shop.testimonial",
+  "pk": 6,
+  "fields": {
+    "customer_name": "Revathi P.",
+    "location": "Trichy",
+    "quote": "You can feel the handwork in every bead. Nothing about it feels mass-produced.",
+    "rating": 5,
+    "photo": "",
+    "order": 5,
+    "is_active": true,
+    "is_featured": false
+  }
+},
+{
+  "model": "shop.testimonial",
+  "pk": 7,
+  "fields": {
+    "customer_name": "Kavya S.",
+    "location": "Hyderabad",
+    "quote": "Ordered the oxidized bangles as a gift for my mom — she hasn't taken them off since.",
+    "rating": 4,
+    "photo": "",
+    "order": 6,
+    "is_active": true,
+    "is_featured": true
+  }
+},
+{
+  "model": "shop.processstep",
+  "pk": 1,
+  "fields": {
+    "stage": "Shape",
+    "days": "Day 1–2",
+    "description": "Local clay is wedged by hand and thrown or moulded into form on a stone wheel.",
+    "image": "process/step1.png",
+    "order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "shop.processstep",
+  "pk": 2,
+  "fields": {
+    "stage": "Dry",
+    "days": "Day 2–4",
+    "description": "Pieces rest in shade for up to two days so they don't crack in the kiln.",
+    "image": "process/step2.png",
+    "order": 1,
+    "is_active": true
+  }
+},
+{
+  "model": "shop.processstep",
+  "pk": 3,
+  "fields": {
+    "stage": "Bisque fire",
+    "days": "Day 5",
+    "description": "Fired at 900°C in a wood-fed kiln — the step that turns clay to terracotta.",
+    "image": "process/step3.png",
+    "order": 2,
+    "is_active": true
+  }
+},
+{
+  "model": "shop.processstep",
+  "pk": 4,
+  "fields": {
+    "stage": "Paint & glaze",
+    "days": "Day 6–7",
+    "description": "Oxide, turmeric and gold-dust finishes are hand-painted, then set with a second low firing.",
+    "image": "process/step4.png",
+    "order": 3,
+    "is_active": true
+  }
+},
+{
+  "model": "shop.processstep",
+  "pk": 5,
+  "fields": {
+    "stage": "Wear",
+    "days": "Day 8",
+    "description": "Strung, packed in cotton, and shipped from Panruti to your door.",
+    "image": "process/step5.png",
+    "order": 4,
+    "is_active": true
+  }
+},
+{
+  "model": "shop.sitesettings",
+  "pk": 1,
+  "fields": {
+    "hero_video": "hero/hero.mp4",
+    "hero_poster": "",
+    "heritage_video": "heritage/pottervideo.mp4",
+    "heritage_poster": ""
+  }
+}
+]
