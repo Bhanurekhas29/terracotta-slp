@@ -43,7 +43,7 @@ class NewsletterSubscribeView(mixins.CreateModelMixin, viewsets.GenericViewSet):
         if not email:
             return Response({"detail": "Email is required."}, status=status.HTTP_400_BAD_REQUEST)
         obj, created = NewsletterSubscriber.objects.get_or_create(email=email)
-        message = "Subscribed! Welcome to Mannvasam." if created else "You're already on the list."
+        message = "Subscribed! Welcome to Vetri Handworks." if created else "You're already on the list."
         return Response({"detail": message, "email": obj.email}, status=status.HTTP_201_CREATED if created else status.HTTP_200_OK)
 
 

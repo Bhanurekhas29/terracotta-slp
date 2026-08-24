@@ -33,7 +33,7 @@ export default function Heritage() {
             <span className="text-turmeric italic font-light">for three generations.</span>
           </h2>
           <p className="mt-6 font-body text-lg text-ivory/75 leading-relaxed max-w-lg">
-            Mannvasam works with a family of potters outside Panruti, Tamil Nadu,
+            Vetri Handworks works with a family of potters outside Panruti, Tamil Nadu,
             whose terracotta jewelry has dressed brides and temple deities alike
             since the 1970s. We buy each finished batch directly — no middlemen,
             no factory moulds, just the same wheel the family has always used.

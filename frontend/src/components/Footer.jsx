@@ -1,5 +1,5 @@
 import Reveal from "./Reveal";
-import LogoMark from "./LogoMark";
+import logo from "../assets/vhw-logoimage.png";
 
 export default function Footer() {
   return (
@@ -7,13 +7,16 @@ export default function Footer() {
       <Reveal as="div" className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 font-display text-xl font-semibold">
-              <LogoMark className="h-5 w-5 text-turmeric" />
-              Mannvasam
+            <div className="flex items-center gap-3">
+              <img src={logo} alt="Vetri Handworks" className="h-24 w-24 rounded-full object-cover" />
+              <span className="font-display leading-none uppercase font-bold text-turmeric">
+                <span className="block text-3xl tracking-wide">Vetri</span>
+                <span className="block text-xl tracking-[0.2em]">Handworks</span>
+              </span>
             </div>
             <p className="mt-4 font-body text-sm text-ivory/60 max-w-sm leading-relaxed">
               Handmade terracotta jewelry, kiln-fired by artisan families in
-              Panruti, Tamil Nadu. Mannvasam means "the scent of earth."
+              Panruti, Tamil Nadu.
             </p>
           </div>
 
@@ -40,7 +43,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 pt-8 border-t border-ivory/10 flex flex-col sm:flex-row justify-between gap-4 font-mono text-xs text-ivory/40">
-          <p>© {new Date().getFullYear()} Mannvasam Terracotta Jewelry. Panruti, Tamil Nadu.</p>
+          <p>© 2023 Vetri Handworks Terracotta Jewelry. Panruti, Tamil Nadu.</p>
           <p>Every piece handmade — no two batches are identical.</p>
         </div>
       </Reveal>

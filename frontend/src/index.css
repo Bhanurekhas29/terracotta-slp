@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* --- Mannvasam brand tokens --- */
+  /* --- Vetri Handworks brand tokens --- */
   --color-kiln: #7A2E1F;        /* dark oxide red — hero, primary dark bg */
   --color-kiln-deep: #5C2116;   /* deeper shade for gradients/borders */
   --color-clay: #B8542C;        /* mid terracotta — CTAs, accents */

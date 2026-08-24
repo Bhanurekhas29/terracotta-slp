@@ -1,5 +1,5 @@
 """
-Django settings for terracotta_jewelry project — Mannvasam Terracotta Jewelry.
+Django settings for terracotta_jewelry project — Vetri Handworks Terracotta Jewelry.
 """
 
 import os
@@ -123,11 +123,11 @@ REST_FRAMEWORK = {
 
 # --- Jazzmin (light theme) ---
 JAZZMIN_SETTINGS = {
-    "site_title": "Mannvasam Admin",
-    "site_header": "Mannvasam",
-    "site_brand": "Mannvasam Terracotta",
-    "welcome_sign": "Welcome to the Mannvasam Terracotta Jewelry admin",
-    "copyright": "Mannvasam Terracotta Jewelry",
+    "site_title": "Vetri Handworks Admin",
+    "site_header": "Vetri Handworks",
+    "site_brand": "Vetri Handworks Terracotta",
+    "welcome_sign": "Welcome to the Vetri Handworks Terracotta Jewelry admin",
+    "copyright": "Vetri Handworks Terracotta Jewelry",
     "search_model": ["shop.Product", "shop.Category"],
     "show_sidebar": True,
     "navigation_expanded": True,

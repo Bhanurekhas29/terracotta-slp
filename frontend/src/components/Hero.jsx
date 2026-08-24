@@ -53,7 +53,7 @@ export default function Hero() {
             <span className="text-turmeric italic font-light">into ornament.</span>
           </h1>
           <p className="mt-7 max-w-md font-body text-lg text-ivory/80 leading-relaxed">
-            Every Mannvasam piece is thrown, dried and kiln-fired by hand —
+            Every Vetri Handworks piece is thrown, dried and kiln-fired by hand —
             no two are ever quite the same, and that's the point.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">

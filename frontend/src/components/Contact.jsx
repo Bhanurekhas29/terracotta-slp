@@ -166,7 +166,7 @@ export default function Contact() {
 
           <Reveal delay={240} className="h-full min-h-[320px] overflow-hidden rounded-2xl border border-ivory/20">
             <iframe
-              title="Mannvasam studio location — Panruti, Tamil Nadu"
+              title="Vetri Handworks studio location — Panruti, Tamil Nadu"
               src={MAP_EMBED_SRC}
               className="h-full min-h-[320px] w-full"
               style={{ border: 0 }}

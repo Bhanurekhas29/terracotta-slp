@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import LogoMark from "./LogoMark";
+import logo from "../assets/vhw-logoimage.png";
 
 const LINKS = [
   { href: "#collection", label: "Collection" },
@@ -25,10 +25,13 @@ export default function Navbar() {
         scrolled ? "bg-ivory/95 backdrop-blur border-b border-charcoal/10" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto max-w-7xl px-6 lg:px-10 h-18 flex items-center justify-between py-4 md:grid md:grid-cols-3">
-        <a href="#top" className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight">
-          <LogoMark className={`h-5 w-5 ${scrolled ? "text-clay" : "text-turmeric"}`} />
-          <span className={scrolled ? "text-charcoal" : "text-ivory"}>Mannvasam</span>
+      <nav className="mx-auto max-w-7xl px-6 lg:px-10 min-h-28 flex items-center justify-between py-3 md:grid md:grid-cols-3">
+        <a href="#top" className="flex items-center gap-3">
+          <img src={logo} alt="Vetri Handworks" className="h-24 w-24 rounded-full object-cover" />
+          <span className="font-display leading-none uppercase font-bold text-turmeric">
+            <span className="block text-3xl tracking-wide">Vetri</span>
+            <span className="block text-xl tracking-[0.2em]">Handworks</span>
+          </span>
         </a>
 
         <div className="hidden md:flex items-center justify-center gap-6 lg:gap-8">
@@ -36,7 +39,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className={`shrink-0 whitespace-nowrap font-body text-sm font-medium tracking-wide hover:opacity-70 transition-opacity ${
+              className={`shrink-0 whitespace-nowrap font-body text-base font-medium tracking-wide hover:opacity-70 transition-opacity ${
                 scrolled ? "text-charcoal" : "text-ivory"
               }`}
             >
