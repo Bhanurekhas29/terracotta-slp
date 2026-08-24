@@ -52,7 +52,7 @@ export default function HowToOrder() {
           <p className="font-mono text-xs tracking-[0.25em] uppercase text-clay mb-4">
             How to order
           </p>
-          <h2 className="whitespace-nowrap font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-charcoal">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-charcoal">
             From browsing to your doorstep.
           </h2>
         </Reveal>

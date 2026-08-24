@@ -7,11 +7,11 @@ export default function Footer() {
       <Reveal as="div" className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3">
-              <img src={logo} alt="Vetri Handworks" className="h-24 w-24 rounded-full object-cover" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <img src={logo} alt="Vetri Handworks" className="h-14 w-14 sm:h-24 sm:w-24 rounded-full object-cover shrink-0" />
               <span className="font-display leading-none uppercase font-bold text-turmeric">
-                <span className="block text-3xl tracking-wide">Vetri</span>
-                <span className="block text-xl tracking-[0.2em]">Handworks</span>
+                <span className="block text-lg sm:text-3xl tracking-wide">Vetri</span>
+                <span className="block text-xs sm:text-xl tracking-[0.1em] sm:tracking-[0.2em]">Handworks</span>
               </span>
             </div>
             <p className="mt-4 font-body text-sm text-ivory/60 max-w-sm leading-relaxed">
@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 pt-8 border-t border-ivory/10 flex flex-col sm:flex-row justify-between gap-4 font-mono text-xs text-ivory/40">
+        <div className="mt-14 pt-8 border-t border-ivory/10 flex flex-col sm:flex-row justify-between gap-4 pr-20 sm:pr-0 font-mono text-xs text-ivory/40">
           <p>© 2023 Vetri Handworks Terracotta Jewelry. Panruti, Tamil Nadu.</p>
           <p>Every piece handmade — no two batches are identical.</p>
         </div>

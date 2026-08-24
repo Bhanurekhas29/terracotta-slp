@@ -57,7 +57,7 @@ export default function FAQ() {
           <p className="font-mono text-xs tracking-[0.25em] uppercase text-clay mb-4">
             Good to know
           </p>
-          <h2 className="whitespace-nowrap font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-charcoal">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-charcoal">
             Frequently asked questions
           </h2>
         </Reveal>

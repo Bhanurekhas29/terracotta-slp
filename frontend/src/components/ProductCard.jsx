@@ -40,9 +40,9 @@ export default function ProductCard({ product }) {
           {FINISH_LABEL[product.finish] || product.finish}
         </span>
       </div>
-      <div className="mt-3 flex flex-1 items-start justify-between gap-3">
+      <div className="mt-3 flex flex-1 flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-3">
         <div className="min-w-0">
-          <h3 className="line-clamp-2 min-h-[3.25rem] font-display text-lg font-semibold text-charcoal leading-snug">
+          <h3 className="line-clamp-2 sm:min-h-[3.25rem] font-display text-lg font-semibold text-charcoal leading-snug">
             {product.name}
           </h3>
           {product.artisan_village && (
@@ -51,7 +51,7 @@ export default function ProductCard({ product }) {
             </p>
           )}
         </div>
-        <div className="text-right shrink-0">
+        <div className="text-left sm:text-right shrink-0">
           <div className="font-body font-semibold text-clay">{formatINR(product.price)}</div>
           {product.compare_at_price && (
             <div className="font-mono text-xs text-charcoal line-through">

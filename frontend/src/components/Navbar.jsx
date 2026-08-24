@@ -25,12 +25,12 @@ export default function Navbar() {
         scrolled ? "bg-ivory/95 backdrop-blur border-b border-charcoal/10" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto max-w-7xl px-6 lg:px-10 min-h-28 flex items-center justify-between py-3 md:grid md:grid-cols-3">
-        <a href="#top" className="flex items-center gap-3">
-          <img src={logo} alt="Vetri Handworks" className="h-24 w-24 rounded-full object-cover" />
-          <span className="font-display leading-none uppercase font-bold text-turmeric">
-            <span className="block text-3xl tracking-wide">Vetri</span>
-            <span className="block text-xl tracking-[0.2em]">Handworks</span>
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 min-h-20 md:min-h-28 flex items-center justify-between py-3 md:grid md:grid-cols-3">
+        <a href="#top" className="flex items-center gap-2 md:gap-3 min-w-0">
+          <img src={logo} alt="Vetri Handworks" className="h-12 w-12 md:h-24 md:w-24 rounded-full object-cover shrink-0" />
+          <span className="font-display leading-none uppercase font-bold text-turmeric min-w-0">
+            <span className="block text-lg md:text-3xl tracking-wide">Vetri</span>
+            <span className="block text-xs md:text-xl tracking-[0.1em] md:tracking-[0.2em] whitespace-nowrap">Handworks</span>
           </span>
         </a>
 
